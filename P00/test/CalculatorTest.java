@@ -49,7 +49,19 @@ public class CalculatorTest {
 		assertEquals (expected, actual);
 	}
 	
-	
+	@Test
+	public void testMultiply() {
+		int a = 4321;
+		int b = 1234;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.multiply(a, b);
+		
+		int expected = 3087;
+		assertEquals (expected, actual);
 	}
+	
+	
+	
 
 }
